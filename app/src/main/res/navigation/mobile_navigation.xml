@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.juanca_campodonico.ec2_campodonico_rivera.ui.home.HomeFragment"
+        android:label="Camera"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.juanca_campodonico.ec2_campodonico_rivera.ui.dashboard.DashboardFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.juanca_campodonico.ec2_campodonico_rivera.ui.notifications.NotificationsFragment"
+        android:label="Informacion"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
